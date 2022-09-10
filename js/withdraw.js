@@ -9,7 +9,11 @@
 7. set balance total using setTextElementValueById
 */
 
-document.getElementById("btn-withdraw").addEventListener("click", function () {
+document.getElementById("btn-withdraw").addEventListener('click', ()=> {
+
+
+  console.log("working");
+
   const newWithdrawAmount = getInputFieldValueById("withdraw-field");
   const previousWithdrawTotal = getTextElementValueById("withdraw-total ");
   const newWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;

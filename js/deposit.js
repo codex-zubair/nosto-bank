@@ -38,6 +38,8 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   document.getElementById("balance-total").innerText = newDepositTotal;
 
  document.getElementById("deposit-field").value = ``;
+
+ console.log("working");
 });
 
 
