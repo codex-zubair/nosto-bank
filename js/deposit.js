@@ -11,6 +11,7 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
   if(parseFloat(newDepositAmount) < 0)
   {
     alert("Only valid Number!");
+    document.getElementById("deposit-field").value = ``;
   }
   else
   {
