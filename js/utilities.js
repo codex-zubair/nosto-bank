@@ -1,12 +1,17 @@
 function getInputFieldValueById(inputFieldId) {
   const inputField = document.getElementById(inputFieldId);
   const inputFieldValueString = inputField.value;
-  if(isNaN(inputFieldValueString))
-  {
+  if (isNaN(inputFieldValueString)) {
     alert("Show Only Number!");
   }
   const inputFieldValue = parseFloat(inputFieldValueString);
-  return inputFieldValue;
+  if (inputFieldValue < 0 ) {
+    alert("give me Real Amount!");
+
+  }
+  else {
+    return inputFieldValue;
+  }
 
 }
 
