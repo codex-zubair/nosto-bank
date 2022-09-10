@@ -2,7 +2,6 @@
 document.getElementById("btn-deposit").addEventListener("click", function () {
 
 
-  console.log('working');
   /* 
     1. get the element by id
     2. get the value from the element
@@ -17,7 +16,7 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
 
   const previousDepositTotal = document.getElementById("balance-total").innerText;
 
-  // console.log(previousDepositTotal);
+
 
 
 
@@ -35,17 +34,13 @@ document.getElementById("btn-deposit").addEventListener("click", function () {
 
   // get previous balance by using the function
 
-  console.log(newDepositTotal);
 
-  Document.getElementById("balance-total");
+  document.getElementById("balance-total").innerText = newDepositTotal;
+
+ document.getElementById("deposit-field").value = ``;
 });
 
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/codingwithrock/nosto-bank.git
-git push -u origin main
+
 
 
 
