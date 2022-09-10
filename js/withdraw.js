@@ -16,7 +16,15 @@ document.getElementById("btn-withdraw").addEventListener('click', ()=> {
   const newWithdrawTotal = parseFloat(previousWithdrawTotal) + parseFloat(newWithdrawAmount);
   document.getElementById('withdraw-total').innerText = newWithdrawTotal;
   const previousBalanceTotal = document.getElementById("balance-total").innerText;
-  const newBalanceTotal = parseFloat(previousBalanceTotal) - newWithdrawAmount;
+  if(previousBalanceTotal == '0')
+  {
+    alert("Zero Balance!");
+    document.getElementById("withdraw-field").value = '';
+  }
+  else
+  {
+    const newBalanceTotal = parseFloat(previousBalanceTotal) - newWithdrawAmount;
   document.getElementById("balance-total").innerText = newBalanceTotal;
   document.getElementById("withdraw-field").value = '';
+  }
 });
